@@ -1,0 +1,124 @@
+:root {
+  --octofit-bg-1: #edf7f1;
+  --octofit-bg-2: #f3f8ff;
+  --octofit-surface: #ffffff;
+  --octofit-text: #17324d;
+  --octofit-muted: #4e6a82;
+  --octofit-primary: #0f766e;
+  --octofit-primary-strong: #0b5d57;
+  --octofit-accent: #f59e0b;
+  --octofit-table-head: #0f766e;
+  --octofit-link: #0f5cc0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background: radial-gradient(circle at 15% 10%, #d8f3dc 0%, rgba(216, 243, 220, 0) 30%),
+    radial-gradient(circle at 85% 0%, #dbeafe 0%, rgba(219, 234, 254, 0) 25%),
+    linear-gradient(180deg, var(--octofit-bg-1) 0%, var(--octofit-bg-2) 55%, #f8fafc 100%);
+  color: var(--octofit-text);
+}
+
+.app-shell h1,
+.app-shell h2,
+.app-shell h3,
+.app-shell h4,
+.app-shell h5,
+.app-shell h6 {
+  color: var(--octofit-primary-strong);
+}
+
+.app-title {
+  color: var(--octofit-primary-strong);
+}
+
+.app-subtitle {
+  color: var(--octofit-muted);
+}
+
+.octofit-navbar {
+  background: linear-gradient(90deg, #0f766e 0%, #0f5cc0 100%);
+}
+
+.octofit-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.octofit-navbar .navbar-brand,
+.octofit-navbar .nav-link {
+  color: #ffffff;
+}
+
+.octofit-navbar .nav-link.active {
+  font-weight: 700;
+  color: #fff7d6;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.app-shell a {
+  color: var(--octofit-link);
+}
+
+.app-shell a:hover {
+  color: #0a4e98;
+}
+
+.octofit-section .card {
+  background: var(--octofit-surface);
+}
+
+.octofit-section .btn-primary {
+  background-color: var(--octofit-primary);
+  border-color: var(--octofit-primary);
+}
+
+.octofit-section .btn-primary:hover {
+  background-color: var(--octofit-primary-strong);
+  border-color: var(--octofit-primary-strong);
+}
+
+.octofit-section .btn-outline-secondary {
+  border-color: #7a8ea3;
+  color: #3f586e;
+}
+
+.octofit-section .btn-outline-secondary:hover {
+  background-color: #3f586e;
+  color: #fff;
+}
+
+.octofit-section .form-label {
+  color: var(--octofit-muted);
+  font-weight: 600;
+}
+
+.octofit-section .table td,
+.octofit-section .table th {
+  vertical-align: middle;
+}
+
+.octofit-section .table thead.table-dark th {
+  background-color: var(--octofit-table-head);
+  border-color: #0c5e58;
+}
+
+.octofit-section .table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: #f2f8f6;
+}
+
+.octofit-section .table-hover > tbody > tr:hover > * {
+  --bs-table-accent-bg: #e6f4f1;
+}
+
+.octofit-section pre {
+  max-height: 320px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
